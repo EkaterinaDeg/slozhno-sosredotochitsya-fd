@@ -2,3 +2,26 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --main-color: #F1B2CE;
+  --background-color: #000028;
+  --color-title: #DB00FF;
+  --bold-font-weight: 400;
+  --text-bg-color: #FF0070;
+  --font-size: 18px;
+  --main-padding: 20px;
+  --mg-top-xs: 10px;
+  --mg-top-l: 40px;
+  --mg-top-s: 50px;
+  --mg-top-xl: 60px;
+  --mg-bt-s: 20px;
+  --mg-bt-l: 60px;
+  --mg-bt-xxl: 80px;
+  --padding-bt-s: 20px;
+  --padding-bt-l: 50px;
+  --padding-bt-xl: 80px;
+  --mg-top-xl: 50px;
+  --gap--xs: 10px;
+  --gap-s: 20px;
+  --bg-image: url(../images/cover-image.png);
+}
