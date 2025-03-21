@@ -44,8 +44,8 @@ header {
   left: 0;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid #ff0070;
-  border-left: 1px solid #ff0070;
+  border-bottom: 1px solid var(--text-bg-color);
+  border-left: 1px solid var(--text-bg-color);
 }
 
 .header__decor {
@@ -61,7 +61,7 @@ header {
   top: 7.5px;
   left: 42px;
   border-radius: 50%;
-  box-shadow: 0px 0px 4px 2px #ff0070;
+  box-shadow: 0px 0px 4px 2px var(--text-bg-color);
   width: 9px;
   height: 9px;
   background-color: var(--text-bg-color);
@@ -74,8 +74,8 @@ header {
   left: 35px;
   width: 25px;
   height: 25px;
-  border-top: 1px solid #ff0070;
-  border-right: 1px solid #ff0070;
+  border-top: 1px solid var(--text-bg-color);
+  border-right: 1px solid var(--text-bg-color);
 }
 
 .header__theme-menu {
@@ -236,9 +236,9 @@ p:not(:last-child) {
   position: absolute;
   top: 0;
   right: 0;
-  width: 25.036px;
-  height: 25.002px;
-  border-top: 1px solid #ff0070;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--text-bg-color);
   border-right: 1px solid #ff0070;
 }
 
@@ -247,10 +247,10 @@ p:not(:last-child) {
   position: absolute;
   bottom: 10px;
   left: 0;
-  width: 25.036px;
-  height: 25.002px;
-  border-bottom: 1px solid #ff0070;
-  border-left: 1px solid #ff0070;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--text-bg-color);
+  border-left: 1px solid var(--text-bg-color);
 }
 
 .header__theme-menu-button:hover {

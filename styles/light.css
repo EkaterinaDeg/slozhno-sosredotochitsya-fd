@@ -17,4 +17,47 @@
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+  
+}
+
+button {
+  color: var(--main-color); 
+}
+
+.header::before {
+  border-bottom: 1px solid var(--main-color);
+  border-left: 1px solid var(--main-color);
+}
+
+.header__decor {
+  color: transparent;
+}
+
+.header__decor::before {
+  content: none;
+}
+
+.header__decor::after {
+  border-top: 1px solid var(--main-color);
+  border-right: 1px solid var(--main-color);
+}
+
+h3 {
+  color: var(--main-color); 
+}
+
+.footer::after {
+  border-bottom: 1px solid var(--main-color);
+  border-left: 1px solid var(--main-color);
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25.036px;
+  height: 25.002px;
+  border-top: 1px solid var(--main-color);
+  border-right: 1px solid var(--main-color);
 }
