@@ -71,11 +71,11 @@ header {
   background-color: var(--color);
 }
 
-.header__decor::after {
+.decorated-zone::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 35px;
+  top: 1.5%;
+  right: 0;
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--color);
@@ -154,9 +154,6 @@ h4.how {
 
 .title_text-block {
   color: var(--color);
-}
-
-.title_text-block {
   font-size: 1em;
   margin-bottom: var(--mg-s);
 }
@@ -237,21 +234,6 @@ p:not(:last-child) {
   justify-content: center;
 }
 
-.footer::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 0;
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid var(--color);
-  border-right: 1px solid var(--color);
-}
-
-.header__theme-menu-button:hover {
-  border: 0.5px solid var(--color);
-}
-
 a {
   text-decoration: none;
 }
@@ -264,6 +246,11 @@ a {
 
 .header__theme-menu-button:hover {
   border: 0.5px solid var(--hover-border-button);
+}
+
+.header__theme-menu-button_active:disabled {
+  border: 1px solid var(--color);
+  pointer-events: none;
 }
 
 .section__text-link:hover {
@@ -290,6 +277,11 @@ a:focus {
     background-position: center;
     justify-items: end;
     align-items: center;
+  }
+
+  .header__title {
+    position: relative;
+    inset-inline-start: calc(-1 * var(--main-padding-s));
   }
 
   .decorated-zone {
@@ -322,7 +314,7 @@ a:focus {
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: var(--gap-s);
-    margin-bottom: var(--padding-xxl);
+    margin-bottom: var(--padding-xxl);  
   }
 
   .title_text-block {
@@ -363,12 +355,16 @@ a:focus {
     padding-bottom: var(--mg-s);
   }
 
-  .footer::after {
-    bottom: var(--mg-s);
+  .decorated-zone::after {
+    top: 3%;
   }
 }
 
 @media (width >= 1024px) {
+  
+  .title {
+    font-size: 157px;
+  }
   
   .header__theme-menu {
     grid-row: 1 / 2;
@@ -397,10 +393,14 @@ a:focus {
   
   .section_text_item.what {
     grid-template-columns: repeat(3, 1fr);
+    row-gap: var(--gap-s);
+    grid-auto-rows: min-content;
   }
-  
+
   .title_text-block.what {
-    grid-row: span 1;
+    grid-column: 1 / 4;
+    max-inline-size: 315px;
+    margin-bottom: 0;
   }
 
   .cause.what {
